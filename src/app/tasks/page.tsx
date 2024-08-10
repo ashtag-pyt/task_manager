@@ -34,7 +34,7 @@ const page = () => {
    
 
       <div className='m-auto ml-20 bg-black flex min-h-screen w-full items-center overflow-x-auto overflow-y-hidden px-[40px]'>
-
+      
       <DndContext sensors={sensors} onDragStart={onDragStart} onDragEnd={onDragEnd} onDragOver={onDragOver}>
 
       <div className='m-auto flex gap-4'>
@@ -45,7 +45,7 @@ const page = () => {
           </SortableContext>
 
         </div>
-      <button onClick={()=>createNewColumn()} className='h-[60px] w-[350px] min-w-[350px] cursor-pointer bg-slate-900 rounded-lg  border-2 border-black p-4 ring-rose-500 hover:ring-2 text-white flex gap-2 '><AddIcon/>Add Column</button>
+      <button onClick={()=>createNewColumn()} className='h-[60px] w-[350px] min-w-[350px] cursor-pointer bg-neutral-800 rounded-lg  border-2 border-black p-4 ring-rose-500 hover:ring-2 text-white flex gap-2 '><AddIcon/>Add Column</button>
       </div>
 
     {createPortal(

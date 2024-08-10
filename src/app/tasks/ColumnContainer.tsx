@@ -53,13 +53,13 @@ function ColumnContainer(props:Props) {
    
     <div ref={setNodeRef} style={style} className="bg-neutral-800/40 w-[350px] h-[500px] max-h-[500px] rounded-md flex flex-col">
 
-      <div {...attributes} {...listeners} onClick={()=>setEditMode(true)}className="text-md bg-slate-900 text-white h-[60px] cursor-grab rounded-md rounded-b-none p-3 font-bold border-slate-900 border-4 flex items-center justify-between">
+      <div {...attributes} {...listeners} onClick={()=>setEditMode(true)}className="text-md bg-neutral-800 text-white h-[60px] cursor-grab rounded-md rounded-b-none p-3 font-bold border-slate-900 border-4 flex items-center justify-between">
 
-        <div className="flex gap-2 bg-slate-900">
+        <div className="flex gap-2 bg-neutral-800">
 
-            <div className="flex justify-center bg-slate-800 items-center   px-2 py-1 text-sm rounded-full">
+            {/* <div className="flex justify-center bg-slate-800 items-center   px-2 py-1 text-sm rounded-full">
                 0
-            </div>
+            </div> */}
             {!editMode && column.title}
             {editMode && <input className="bg-black focus:border-rose-500 border rounded outline-none px-2" value={column.title} 
             onChange={(e)=> updateColumn(column.id,e.target.value)} autoFocus onBlur={()=>{
